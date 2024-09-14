@@ -13,17 +13,17 @@ see [github repo](https://github.com/Richardsl/heatmap-calendar-obsidian#readme)
 
 ```dataviewjs
 
-dv.span("**🏋️ Exercise 🏋️**")
+dv.span("**💪 Exercise 💪**")
 
 const calendarData = {
-    year: 2022, // optional, remove this line to autoswitch year
+    //year: 2022, // optional, remove this line to autoswitch year
     colors: {
         red: ["#ff9e82","#ff7b55","#ff4d1a","#e73400","#bd2a00",]
     },
     entries: []
 }
 
-for(let page of dv.pages('"daily notes"').where(p=>p.exercise)){
+for(let page of dv.pages('"300_Other/Daily Notes"').where(p=>p.exercise)){
     calendarData.entries.push({
         date: page.file.name,
         intensity: page.exercise,
@@ -40,15 +40,15 @@ renderHeatmapCalendar(this.container, calendarData)
 dv.span("**💸 Money Spent 💸**")
 
 const calendarData = {
-    year: 2022, // optional, remove this line to autoswitch year
+    // //year: 2022, // optional, remove this line to autoswitch year
     entries: [],
 }
 
-for(let page of dv.pages('"daily notes"').where(p=>p.moneySpent)){
+for(let page of dv.pages('"300_Other/Daily Notes"').where(p=>p.moneySpent)){
 
     calendarData.entries.push({
         date: page.file.name,
-        intensity: page.moneySpent,
+        intensity: page.money_spent,
         content: await dv.span(`[](${page.file.name})`), //for hover preview
     })  
 }
@@ -62,7 +62,7 @@ renderHeatmapCalendar(this.container, calendarData)
 dv.span("**🍺 Alcohol Consumption 🍺**")
 
 const calendarData = {
-    year: 2022, // optional, remove this line to autoswitch year
+    //year: 2022, // optional, remove this line to autoswitch year
     colors: {
         blue: ["#ffdf04","#ffbe04","#ff9a03","#ff6d02","#ff2c01"]
     },
@@ -70,7 +70,7 @@ const calendarData = {
     showCurrentDayBorder: false
 }
 
-for(let page of dv.pages('"daily notes"').where(p=>p.alcohol)){
+for(let page of dv.pages('"300_Other/Daily Notes"').where(p=>p.alcohol)){
     calendarData.entries.push({
         date: page.file.name,
         intensity: page.alcohol,
@@ -87,7 +87,7 @@ renderHeatmapCalendar(this.container, calendarData)
 dv.span("**🔗 Writing **- Dont break the chain! 🔗🔗🔗🔗")
 
 const calendarData = {
-    year: 2022, // optional, remove this line to autoswitch year
+    //year: 2022, // optional, remove this line to autoswitch year
     colors: {
         //white: ["#fff","#fff","#fff","#fff","#fff"],
         transparent: ["transparent"],
@@ -95,7 +95,7 @@ const calendarData = {
     entries: []
 }
 
-for(let page of dv.pages('"daily notes"').where(p=>p.writing)){
+for(let page of dv.pages('"300_Other/Daily Notes"').where(p=>p.writing)){
 	 
     calendarData.entries.push({
         date: page.file.name,
@@ -117,7 +117,7 @@ renderHeatmapCalendar(this.container, calendarData)
 dv.span("**👫 Social tracker 🧑‍🤝‍🧑**")
 
 const calendarData = {
-    year: 2022, // optional, remove this line to autoswitch year
+    //year: 2022, // optional, remove this line to autoswitch year
     colors: {
         blue: ["#8cb9ff","#69a3ff","#428bff","#1872ff","#0058e2"],
         pink: ["#ff96cb","#ff70b8","#ff3a9d","#ee0077","#c30062"],
@@ -125,7 +125,7 @@ const calendarData = {
     entries: []
 }
 
-for(let page of dv.pages('"daily notes"').where(p=>p.social)){
+for(let page of dv.pages('"300_Other/Daily Notes"').where(p=>p.social)){
     let color = ""
     if(page.social.greg.initiative == "incoming"){color="pink"}
     
@@ -150,7 +150,7 @@ const hue1 = 13 //red
 const hue2 = 132 //green
 
 const calendarData = {
-    year: 2022, // optional, remove this line to autoswitch year 
+    //year: 2022, // optional, remove this line to autoswitch year 
     intensityScaleStart: 1,
     intensityScaleEnd: 9,
     colors: {
@@ -169,7 +169,7 @@ const calendarData = {
     entries: []
 }
 
-for(let page of dv.pages('"daily notes"').where(p=>p.mood)){ 
+for(let page of dv.pages('"300_Other/Daily Notes"').where(p=>p.mood)){ 
 
     calendarData.entries.push({
         date: page.file.name, 
