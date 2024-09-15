@@ -155,15 +155,16 @@ const calendarData = {
     intensityScaleEnd: 9,
     colors: {
         red2green: [
-            `hsl(${hue1}, 100%, 37%)`,     // 1 - darkest red
-            `hsl(${hue1}, 100%, 50%)`,     // 2 - 
-            `hsl(${hue1}, 100%, 60%)`,     // 3 - 
-            `hsl(${hue1}, 100%, 77%)`,     // 4 - lightest red
-            `hsl(0, 0%, 80%)`,             // 5 - neutral gray
-            `hsl(${hue2*0.7}, 70%, 72%)`,  // 6 - lightest green
-            `hsl(${hue2*0.85}, 43%, 56%)`, // 7 - 
-            `hsl(${hue2}, 49%, 36%)`,      // 8 - 
-            `hsl(${hue2}, 59%, 24%)`,      // 9 - darkest green
+            `hsl(${hue1}, 100%, 37%)`,     // 1 - 😞 - Very sad (darkest red, worst mood)
+            `hsl(${hue1}, 100%, 50%)`,     // 2 - 😟 - Sad
+            `hsl(${hue1}, 100%, 60%)`,     // 3 - 😕 - Disappointed
+            `hsl(${hue1}, 100%, 77%)`,     // 4 - 😐 - Neutral (lightest red)
+            `hsl(0, 0%, 80%)`,             // 5 - 🙂 - Slightly happy (gray, neutral mood)
+            `hsl(${hue2*0.7}, 70%, 72%)`,  // 6 - 😊 - Happy (lightest green)
+            `hsl(${hue2*0.85}, 43%, 56%)`, // 7 - 😀 - Very happy
+            `hsl(${hue2}, 49%, 36%)`,      // 8 - 😃 - Excited
+            `hsl(${hue2}, 59%, 24%)`,      // 9 - 😄 - Ecstatic (darkest green, best mood)
+            `hsl(${hue2}, 65%, 20%)`       // 10 - 😆 - Overjoyed (extra darkest green)
         ],
     },
     entries: []
