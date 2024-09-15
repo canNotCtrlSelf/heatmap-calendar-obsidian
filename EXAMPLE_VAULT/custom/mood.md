@@ -24,7 +24,7 @@ const moodIcons = {
     10: '😆' // Overjoyed
 }
 
-for(let page of dv.pages('"daily notes"').where(p => p.mood)){
+for(let page of dv.pages('"300_Other/Daily Notes"').where(p => p.mood)){
     const mood = page.mood;
     const icon = moodIcons[mood] || '😐'; // Default to neutral if mood is not in the range
     calendarData.entries.push({
